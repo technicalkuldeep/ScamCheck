@@ -5,6 +5,7 @@ python-dotenv
 # Database
 pymongo
 motor
+base58
 
 # Auth / security
 passlib

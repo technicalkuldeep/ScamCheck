@@ -1,0 +1,121 @@
+{
+  "theme": "dark",
+  "archetype": "4 (Swiss & High-Contrast)",
+  "typography": {
+    "heading_font": "Azeret Mono",
+    "body_font": "IBM Plex Sans",
+    "font_weights": {
+      "headings": "font-black",
+      "body": "font-normal",
+      "labels": "font-medium"
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter leading-none",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight leading-none",
+      "h3": "text-xl sm:text-2xl tracking-tight",
+      "h4": "text-lg sm:text-xl",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm",
+      "overline": "text-xs uppercase tracking-[0.2em] font-medium"
+    }
+  },
+  "colors": {
+    "background": {
+      "primary": "#0A0A0C", 
+      "secondary": "#121216",
+      "tertiary": "#1A1A20"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#A1A1AA",
+      "muted": "#71717A"
+    },
+    "border": {
+      "default": "#27272A",
+      "focus": "#FFFFFF"
+    },
+    "accents": {
+      "cta": "#FFFFFF", 
+      "cta_text": "#0A0A0C",
+      "safe_green": "#00FF66",
+      "warning_yellow": "#FFD600",
+      "high_risk_red": "#FF3333",
+      "klein_blue": "#0055FF"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Technical Control Room - dense data but sharp, clear hierarchy.",
+    "container_padding": "p-6 sm:p-8 lg:p-12",
+    "grid_system": {
+      "marketing": "grid-cols-1 md:grid-cols-12 gap-8",
+      "dashboard": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
+    },
+    "border_radius": "rounded-none",
+    "surface_strategy": "Grid Borders (Technical Look). Use sharp edges, flat backgrounds, no shadows. Rely on 1px solid borders (border-white/10) to define sections."
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-white text-[#0A0A0C] hover:bg-gray-200 transition-colors duration-200 font-medium px-6 py-4 rounded-none border border-white",
+      "secondary": "bg-transparent text-white border border-white/20 hover:border-white transition-colors duration-200 px-6 py-4 rounded-none"
+    },
+    "inputs": {
+      "default": "bg-[#121216] border border-white/20 text-white placeholder-gray-500 p-4 rounded-none focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-all font-mono text-lg"
+    },
+    "cards": {
+      "default": "bg-[#121216] border border-white/10 rounded-none p-6"
+    },
+    "badges": {
+      "safe": "bg-[#00FF66]/10 text-[#00FF66] border border-[#00FF66]/30 px-3 py-1 text-xs uppercase tracking-wider font-mono",
+      "warning": "bg-[#FFD600]/10 text-[#FFD600] border border-[#FFD600]/30 px-3 py-1 text-xs uppercase tracking-wider font-mono",
+      "danger": "bg-[#FF3333]/10 text-[#FF3333] border border-[#FF3333]/30 px-3 py-1 text-xs uppercase tracking-wider font-mono"
+    },
+    "risk_meter": {
+      "description": "Large animated SVG circle. Stroke color changes based on risk (Green/Yellow/Red). Center contains massive animated number (0-100). Needs precise easing and glow via drop-shadow on the SVG path."
+    },
+    "warning_banner": {
+      "default": "border-l-4 border-[#FF3333] bg-[#FF3333]/10 p-4 text-[#FF3333] font-mono text-sm flex items-start gap-3"
+    }
+  },
+  "motion": {
+    "hover": "transition-all duration-200 ease-in-out",
+    "entrance": "framer-motion staggered fade-in up (y: 20, opacity: 0 -> y: 0, opacity: 1)",
+    "meter": "SVG stroke-dashoffset animation with 1.5s ease-out duration"
+  },
+  "accessibility": {
+    "focus_states": "All interactive elements must have focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0A0A0C]",
+    "contrast": "Ensure text over colored backgrounds meets APCA standards. Use white text on dark red/green banners if needed."
+  },
+  "media": {
+    "images": [
+      {
+        "category": "hero_background",
+        "url": "https://static.prod-images.emergentagent.com/jobs/db902ef7-9157-45cb-a7ca-8d5baca83642/images/3142bb278a5813bb347e29ffca9835f255d21785845c4f78f7180925456997c8.png",
+        "description": "Dark mode abstract cyber background. Use with heavy opacity overlay (e.g., bg-black/80) to ensure text legibility.",
+        "usage": "Landing page hero section background"
+      },
+      {
+        "category": "3d_accent",
+        "url": "https://static.prod-images.emergentagent.com/jobs/db902ef7-9157-45cb-a7ca-8d5baca83642/images/d9d661c28ec3b479c7c92e84e99e51b33e87355df43e6c22a02dab0b137c3bb8.png",
+        "description": "3D secure data node. Use as a floating graphic in the feature section or next to the risk meter explanation.",
+        "usage": "Feature showcase image"
+      },
+      {
+         "category": "texture_accent",
+         "url": "https://images.unsplash.com/photo-1660062993659-3974d11f9d90?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwyfHxzb2xhbmElMjBjcnlwdG8lMjBsb2dvfGVufDB8fHx8MTc3NjUyMDU2Nnww&ixlib=rb-4.1.0&q=85",
+         "description": "Abstract purple/black dice texture. Use sparingly as small texture fills in cards if needed.",
+         "usage": "Decorative texture"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Run: yarn add @phosphor-icons/react",
+    "Strictly adhere to the monochrome base palette (#0A0A0C) with stark white text and sharp 1px borders.",
+    "Colors (Red, Yellow, Green) must ONLY be used for data states and risk indicators. Do not use them for decoration.",
+    "Do NOT use rounded corners (rounded-lg). Use 'rounded-none' everywhere to enforce the brutalist/terminal aesthetic.",
+    "The Risk Score Meter must be the visual centerpiece of the results page. Implement it as a custom SVG with an animated stroke-dashoffset in React.",
+    "Headings MUST use Azeret Mono. Body MUST use IBM Plex Sans. Import them via standard Google Fonts tags in index.html.",
+    "Never use generic standard cards with drop shadows. Use the Grid Borders concept (border border-white/10).",
+    "All interactive elements MUST have data-testid attributes.",
+    "Input fields should be massive and commanding on the landing page (e.g., text-2xl, p-6)."
+  ]
+}

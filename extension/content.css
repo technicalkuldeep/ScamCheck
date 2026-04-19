@@ -1,0 +1,43 @@
+.scamcheck-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  margin: 0 4px !important;
+  padding: 1px 6px !important;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em !important;
+  color: #0A0A0C !important;
+  background: var(--scamcheck-color, #FF3333) !important;
+  border: 1px solid var(--scamcheck-color, #FF3333) !important;
+  border-radius: 0 !important;
+  vertical-align: middle !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  user-select: none !important;
+  white-space: nowrap !important;
+  box-shadow: none !important;
+  transition: transform 0.12s ease-out !important;
+}
+.scamcheck-badge:hover {
+  transform: translateY(-1px) !important;
+  filter: brightness(1.05) !important;
+}
+.scamcheck-badge .scamcheck-dot {
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 0 !important;
+  background: #0A0A0C !important;
+  display: inline-block !important;
+}
+.scamcheck-badge .scamcheck-score {
+  font-weight: 700 !important;
+  color: #0A0A0C !important;
+}
+.scamcheck-badge .scamcheck-label {
+  color: #0A0A0C !important;
+  opacity: 0.8 !important;
+}

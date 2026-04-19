@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "SCAMCHECK — Solana Risk Scanner",
+  "version": "1.0.0",
+  "description": "Detects Solana wallet & token addresses on any webpage and shows instant risk scores. Powered by SCAMCHECK.",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "SCAMCHECK"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

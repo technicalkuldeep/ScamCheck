@@ -276,7 +276,7 @@ export default function Landing() {
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-3">
                 <a
-                  href="/extension/scamcheck-extension.zip"
+                  href="/extension/extension.zip"
                   download
                   data-testid="extension-download-button"
                   className="inline-flex items-center gap-3 bg-white px-6 py-4 font-mono text-xs uppercase tracking-[0.2em] text-[#0A0A0C] hover:bg-white/90 transition-colors"
@@ -285,7 +285,7 @@ export default function Landing() {
                   Download (.zip)
                 </a>
                 <a
-                  href="/extension/scamcheck-extension.zip"
+                  href="/extension/extension.zip"
                   download
                   data-testid="extension-install-guide"
                   className="inline-flex items-center gap-2 border border-white/20 bg-transparent px-5 py-4 font-mono text-xs uppercase tracking-[0.2em] text-white/80 hover:border-white transition-colors"

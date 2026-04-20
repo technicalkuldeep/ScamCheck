@@ -9,7 +9,7 @@ import os
 # Use the public URL from environment
 BASE_URL = os.environ.get('REACT_APP_BACKEND_URL', '').rstrip('/')
 if not BASE_URL:
-    BASE_URL = "https://token-safety-1.preview.emergentagent.com"
+    BASE_URL = "https://scam-check-j8fe.vercel.app/"
 
 # Test addresses
 USDC_TOKEN = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"  # USDC - has high liquidity

@@ -1,6 +1,6 @@
 // SCAMCHECK background service worker
-const API_BASE = "https://token-safety-1.preview.emergentagent.com/api";
-const WEB_APP = "https://token-safety-1.preview.emergentagent.com";
+const API_BASE = "https://scamcheck-6.onrender.com/api";
+const WEB_APP = "https://scam-check-j8fe.vercel.app/";
 const CACHE = new Map(); // in-memory; cleared per service worker lifecycle
 const CACHE_TTL_MS = 5 * 60 * 1000;
 

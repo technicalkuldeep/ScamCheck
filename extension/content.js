@@ -3,7 +3,7 @@
 // queries backend, and injects compact risk badges next to each match.
 
 const BASE58_RE = /\b[1-9A-HJ-NP-Za-km-z]{32,44}\b/g;
-const API_BASE = "https://token-safety-1.preview.emergentagent.com/api";
+const API_BASE = "https://scamcheck-6.onrender.com/api";
 const SCANNED = new Set();
 const BADGE_CLASS = "scamcheck-badge";
 

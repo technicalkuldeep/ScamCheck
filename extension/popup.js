@@ -1,5 +1,5 @@
-const API_BASE = "https://token-safety-1.preview.emergentagent.com/api";
-const WEB_APP = "https://token-safety-1.preview.emergentagent.com";
+const API_BASE = "https://scamcheck-6.onrender.com//api";
+const WEB_APP = "https://scam-check-j8fe.vercel.app/";
 
 const $addr = document.getElementById("addr");
 const $btn = document.getElementById("scan");
